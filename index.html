@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
     <link href="index.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100..800&family=Audiowide&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sancreek&display=swap" rel="stylesheet">
@@ -108,9 +109,11 @@
         </section>
         <hr>
 
+        
         <section class="contact">
-            <h4>CONTACT ME</h4>
-            <div class="info">
+            <div class="one">
+                <h1>CONTACT me</h1>
+                <div class="info">
                 <div>
                     <h6>EMAIL</h6>
                     <a>rafirafeef446@gmail.com</a>
@@ -122,8 +125,27 @@
                 </div>
                 
             </div>
+            </div>
+            <div class="two">
+                <form id="contact-form">
+
+                    <input type="text" name="name" placeholder="Enter Name" required >
+                    <br><br>
+                    <input type="email" name="email" placeholder="Enter Email" required >
+                    <br><br>
+                    <textarea name="message" placeholder="Enter Message" required></textarea>
+                    <br><br>
+                    <button type="submit">Send Email</button>
+
+                </form>
+            </div>
+                
+                       
         </section>
+        
+
 
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
